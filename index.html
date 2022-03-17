@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,17 +40,17 @@
             </div>
             <div class="botonesInferiores">
                 <div class="botonesColores">
-                    <div class="containerBotones">
+                    <div class="containerBotones ">
                         <div class="btn palanca colorNegro"></div>
                         <div class="btnRectangular colorRojo"></div>
-                        <div class="btnRectangular colorVerduzco"></div>
+                        <div class="btnRectangular colorVerduzco" onclick="abrirCampoBusqueda()"></div>
                     </div>
-                    <div class="containerName">
+                    <div class="containerName ">
                         <div class="campoName"></div>
                     </div>
                 </div>
                 <div class="botonesCruz">
-                    <div class="palancaSuperior"></div>
+                    <div class="palancaSuperior "></div>
                     <div class="medio">
                         <div class="palancaIzq"></div>
                         <div class="palancaDer"></div>
@@ -113,7 +113,18 @@
                 </div>
             </div>
         </div>
+    
     </main>
+
+    <div class="modal" id="modalInput">
+        <div class="modal-contenido textCenter">
+            <h2 class="tit2">Nombre del pokemon</h2>
+            <input id="inputNamePokemon" type="text" class="inputText" placeholder="Nombre del pokemon">
+            <br><br>
+            <button class="btn btn-green" onclick="consultaPokemon()">Buscar</button>
+            <button class="btn btn-gris" onclick="cancelarCampoBusqueda()">Cancelar</button>
+        </div>
+    </div>
 
     <script src="./js/index.js"></script>
 </body>

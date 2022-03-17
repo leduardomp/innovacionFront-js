@@ -441,18 +441,109 @@ body{
     margin-left: 3%;
 }
 
-@media only screen and (max-width:400) {
+
+.modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+}
+
+.modal-contenido{
+    background-color: white;
+    width:250px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.modal-activo{
+    opacity:1;
+    pointer-events:auto;
+}
+
+@media only screen and (max-width:400px) {  
+
     .titPrincipal{
         display: none;
     }
 
     .principal{
         width: 100%;
-        height: 100%;
-        display: flex;
+        display: block;
     }
 
     .ladoA, .ladoB{
         width: 100%;
+        height: 100vh;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .botonesSuperiores{
+        height: 15%;
+    }
+
+    .btnGrande{
+        width: 80px;
+        height: 80px;
+    }
+
+    .btnChico{
+        width: 30px;
+        height: 30px;
+    }
+
+    .palanca{
+        height: 60px;
+        width: 60px;
+    }
+
+    .btnRectangular{
+        width: 60px;
+    }
+
+    .campoName{
+        margin-left: 6%;
+    }
+
+    .botonesCruz{
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+
+    .medio{
+        width: 120px;
+        margin-left: 5%;
+    }
+
+    .encabezado{
+        display: none;
+    }
+
+    .containerCaracteristicas{
+        margin-top: 0px;
+        border-top: 1px solid transparent;
+    }
+
+    .containerButton{
+        margin-top: 5%;
+    }
+
+    .containerButtonLargos{
+        margin-top: 5%;
+    }
+
+    .containerButtonLargosB{
+        margin-top: 8%;
+    }
+
+    .containerDatosExtra{
+        margin-top: 8%;
     }
 }
