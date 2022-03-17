@@ -26,7 +26,7 @@
                     <div class="btn indicador colorRojo"></div>
                 </div>
                 <div class="containerImagen2">
-
+                    <img id="imgPokemon" src="./img/tituloPokemon.png" alt="default" class="imgPokemon">
                 </div>
                 <div class="botonesImagen">
                     <div class="btn encendido colorRojo"></div>
@@ -46,14 +46,16 @@
                         <div class="btnRectangular colorVerduzco" onclick="abrirCampoBusqueda()"></div>
                     </div>
                     <div class="containerName ">
-                        <div class="campoName"></div>
+                        <div class="campoName"> 
+                            <span id="namePokemon" class="namePokemon">  </span> 
+                        </div>
                     </div>
                 </div>
                 <div class="botonesCruz">
                     <div class="palancaSuperior "></div>
                     <div class="medio">
-                        <div class="palancaIzq"></div>
-                        <div class="palancaDer"></div>
+                        <div class="palancaIzq" onclick="afterPokemon()"></div>
+                        <div class="palancaDer" onclick="nextPokemon()"></div>
                     </div>
                     <div class="palancaInferior"></div>
                 </div>
@@ -96,8 +98,8 @@
             </div>
             <div class="containerButtonLargosB ">
                 <div class="botonesGrises allBordes ">
-                    <div class="botonGris borderIzq"></div>
-                    <div class="botonGris borderDer"></div>
+                    <div class="botonGris borderIzq" ></div>
+                    <div class="botonGris borderDer" ></div>
                 </div>
                 <div class="botonCirculo">
                     <div class="btn led colorLed"></div>
@@ -106,10 +108,10 @@
 
             <div class="containerDatosExtra">
                 <div class="datoExtraCont">
-                    <div class="datoExtra"> <div class="textoExtra"> ALTURA: </div> </div>
+                    <div class="datoExtra"> <div class="textoExtra"> ALTURA: <span id="alturaPokemon"></span> </div> </div>
                 </div>
                 <div class="datoExtraCont">
-                    <div class="datoExtra"> <div class="textoExtra"> PESO: </div>  </div>
+                    <div class="datoExtra"> <div class="textoExtra"> PESO: <span id="pesoPokemon"></span> </div> </div>
                 </div>
             </div>
         </div>
@@ -121,8 +123,8 @@
             <h2 class="tit2">Nombre del pokemon</h2>
             <input id="inputNamePokemon" type="text" class="inputText" placeholder="Nombre del pokemon">
             <br><br>
-            <button class="btn btn-green" onclick="consultaPokemon()">Buscar</button>
-            <button class="btn btn-gris" onclick="cancelarCampoBusqueda()">Cancelar</button>
+            <button class="btnAction allBordes colorOk" onclick="buscarPokemon()">Buscar</button>
+            <button class="btnAction allBordes colorCancel" onclick="cancelarCampoBusqueda()">Cancelar</button>
         </div>
     </div>
 

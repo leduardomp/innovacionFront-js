@@ -19,6 +19,10 @@ body{
     font-size: 3em;
 }
 
+.tit2 {
+    font-size: 1.5em;
+}
+
 .principal{
     margin: 0 auto;
     width: 1024px;
@@ -95,7 +99,23 @@ body{
 .colorLed{
     background-color: #C6BB44;
 }
-    
+
+.colorOk{
+    background-color: green;
+}
+
+.colorCancel{
+    background-color: gray;
+}
+
+.inputText{
+    padding: 10px 15px;
+    margin-top: 5%;
+}
+
+.textCenter{
+    text-align: center;
+}
 
 
 .posicion1{
@@ -124,6 +144,16 @@ body{
     margin-left: 10%;
     background-color: #fff;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.imgPokemon{
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .indicadores{
@@ -228,6 +258,13 @@ body{
     margin-left: 28%;
     margin-top: 3%;
     border-radius: 10px;
+}
+
+.namePokemon{
+    line-height: 90px;
+    vertical-align: middle;
+    color: snow;
+    font-size: 2em;
 }
 
 .palancaSuperior{
@@ -466,6 +503,12 @@ body{
 .modal-activo{
     opacity:1;
     pointer-events:auto;
+}
+
+.btnAction{
+    color: white;
+    padding: 10px 20px;
+    border: none;
 }
 
 @media only screen and (max-width:400px) {  
