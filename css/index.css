@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.auxBorder{
+    border: 1px solid #98FC6A;
+}
+
+.centrado{
+    margin: auto;
+}
+
+.titPrincipal{
+    font-size: 3em;
+}
+
+.principal{
+    margin: 0 auto;
+    width: 1024px;
+    height: 750px;
+    display: flex;
+}
+
+.ladoA, .ladoB{
+    width: 50%;
+    background-color: #D11343;
+}
+
+.ladoA{
+    border-radius: 50px 0px 0px 50px;
+}
+
+.ladoB{
+    border-radius: 0px 0px 50px 0px;
+}
+
+.botonesSuperiores{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
+}
+
+.btnGrande{
+    width: 100px;
+    height: 100px;
+}
+
+.btnChico{
+    width: 40px;
+    height: 40px;
+}
+
+.colorAzul{
+    background-color: #2DEBF4;
+}
+
+.colorRojo{
+    background-color: #CC0B21;
+}
+
+.colorAmarillo{
+    background-color: #E5EE67;
+}
+
+.colorVerde{
+    background-color: #98FC6A;
+}
+
+.colorVerduzco{
+    background-color: #157081;
+}
+
+.colorNegro{
+    background-color: black;
+}
+
+.colorGrisObscuro{
+    background-color: #313131;
+}
+
+.colorLed{
+    background-color: #C6BB44;
+}
+    
+
+
+.posicion1{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.posicion2{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.containerImagen{
+    border: 1px solid black;
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #E3E3E3;
+    border-radius: 30px 30px 30px 100px ;
+}
+
+.containerImagen2{
+    border: 1px solid black;
+    height: 70%;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.indicadores{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.indicador{
+    width: 10px;
+    height: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.botonesImagen{
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.encendido{
+    height: 40px;
+    width: 40px;
+    margin-right: 20%;
+}
+
+.bocina{
+    width: 40%;
+    height: 100%;
+    margin-right: 10%;
+    vertical-align: middle;
+}
+
+.linea{
+    margin: auto;
+    margin-top: 3%;
+    background-color: black;
+    height: 5px;
+    width: 80%;
+    flex-direction: column;
+    border-radius: 2px;
+    display: block;
+}
+
+.correccionlinea{
+    margin-top: 10%;
+}
+
+.botonesInferiores{
+    height: 30%;
+    display: flex;
+}
+
+.botonesColores{
+    height: 100%;
+    width: 67%;
+}
+
+.botonesCruz{
+    height: 100%;
+    width: 33%;
+}
+
+.containerBotones{
+    height: 35%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.palanca{
+    height: 70px;
+    width: 70px;
+    margin-right: 3%;
+}
+
+.btnRectangular{
+    height: 10px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.containerName{
+    height: 58%;
+}
+
+.campoName{
+    width: 200px;
+    height: 90px;
+    background-color: #63C382;
+    border: 1px solid black;
+    margin-left: 28%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+.palancaSuperior{
+    height: 50px;
+    width: 35px;
+    background-color: black;
+    margin-top: 20%;
+    margin-left: 38%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.medio{
+    width: 130px;
+    height: 35px;
+    background-color: black;
+    margin-left: 10%;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.palancaIzq{
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    margin-right: 6%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.palancaDer{
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    margin-left: 6%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.palancaInferior{
+    height: 50px;
+    width: 35px;
+    background-color: black;
+    margin-left: 38%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/** lado B */
+
+.encabezado{
+    background-color: white;
+    height: 150px;
+}
+
+.forma{
+    background-color: #D11343;
+    height: 150px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 100%);
+}
+
+.containerCaracteristicas{
+    width: 100%;
+    height: 28%;
+}
+
+.pizzarra{
+    width: 80%;
+    height: 90%;
+    background-color: #0C4035;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3%;
+    color: #F7D336;
+}
+
+.containerTipo{
+    text-align: left;
+    font-size: 1.3em;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.containerEspecificaciones{
+
+}
+
+.containerButton{
+    height: 15%;
+}
+
+.tabla{
+    background-color: #31C4E8;
+    display: table;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.rowTabla{
+    height: 50%;
+    display: table-row;
+}
+
+.cellTabla{
+    display: table-cell;
+    width: 20%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.allBordes{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.bordeIzqSup{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.bordeDerSup{
+    border-radius: 0px 10px 0px 0px;
+}
+
+.bordeIzqInf{
+    border-radius: 0px 0px 0px 10px;
+}
+
+.bordeDerInf{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.borderIzq{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.borderDer{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.containerButtonLargos{
+    height: 3%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+}
+
+.containerButtonLargosB{
+    margin-top: 5%;
+    height: 8%;
+    display: flex;
+}
+
+.botonesGrises{
+    height: 100%;
+    width: 40%;
+    background-color: #DEDEDE;
+    display: flex;
+    border: 1px solid black;
+    margin-left: 5%;
+}
+
+.botonGris{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.botonCirculo{
+    width: 50%;
+    justify-content: right;
+    display: flex;
+}
+
+.led{
+    height: 40px;
+    width: 40px;
+    margin-top: 4%;
+}
+
+.containerDatosExtra{
+    margin-top: 5%;
+    height: 12%;
+    display: flex;
+}
+
+.datoExtraCont{
+    width: 50%;
+    height: 100%;
+}
+
+.datoExtra{
+    width: 80%;
+    height: 70%;
+    background-color: #0C4035;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3%;
+    color: #F7D336;
+    text-align: left;
+}
+
+.textoExtra{
+    height: auto;
+    width: 90%;
+    vertical-align: middle;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width:400) {
+    .titPrincipal{
+        display: none;
+    }
+
+    .principal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .ladoA, .ladoB{
+        width: 100%;
+    }
+}
