@@ -5,6 +5,7 @@
 
 body{
     text-align: center;
+    font-family: monospace;
 }
 
 .auxBorder{
@@ -53,9 +54,11 @@ body{
     border: 1px solid black;
     border-radius: 50%;
     display: block;
+    /*
     box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
     -webkit-box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
     -moz-box-shadow: 0px 6px 10px -4px rgb(0, 0, 0);
+    */
 }
 
 .btnGrande{
@@ -117,7 +120,11 @@ body{
     text-align: center;
 }
 
+.pointerCursor{
+    cursor: pointer;
+}
 
+/* */
 .posicion1{
     margin-top: 2%;
     margin-left: 3%;
@@ -267,6 +274,13 @@ body{
     font-size: 2em;
 }
 
+.numPokemon{
+    line-height: 55px;
+    vertical-align: middle;
+    color: blue;
+    font-size: 2em;
+}
+
 .palancaSuperior{
     height: 50px;
     width: 35px;
@@ -349,8 +363,131 @@ body{
 }
 
 .containerEspecificaciones{
-
+    display: table;
+    height: 80%;
+    width: 100%;
+    margin-top: 2%;
 }
+
+.stat{
+    display: table-cell;
+    height: 100%;
+    width: 16.6%;
+}
+
+.nivel{
+    height: 85%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border: 1px solid #157081;
+    position: relative;
+}
+
+/* cantidades */
+
+.cantidad{
+    position: absolute;
+    background-color: #2DEBF4;
+    width: 100%;
+    bottom: 0px;
+}
+
+.maximo{
+    background-color: orange;
+    height: 100%;
+}
+
+.ceroPorciento{
+    height: 0%;
+}
+
+.cincoPorciento{
+    height: 5%;
+}
+
+.diezPorciento{
+    height: 10%;
+}
+
+.quincePorciento{
+    height: 15%;
+}
+
+.veintePorciento{
+    height: 20%;
+}
+
+.veitiCincoPorciento{
+    height: 25%;
+}
+
+.treintaPorciento{
+    height: 30%;
+}
+
+.treintaCincoPorciento{
+    height: 35%;
+}
+
+.cuarentaPorciento{
+    height: 40%;
+}
+
+.cuarentaCincoPorciento{
+    height: 45%;
+}
+
+.cincuentaPorciento{
+    height: 50%;
+}
+
+.cincuentaCincoPorciento{
+    height: 55%;
+}
+
+.sesentaPorciento{
+    height: 60%;
+}
+
+.sesentaCincoPorciento{
+    height: 65%;
+}
+
+.setentaPorciento{
+    height: 70%;
+}
+
+.setentaCincoPorciento{
+    height: 75%;
+}
+
+.ochentaPorciento{
+    height: 80%;
+}
+
+.ochentaCincoPorciento{
+    height: 85%;
+}
+
+.noventaPorciento{
+    height: 90%;
+}
+
+.noventaCincoPorciento{
+    height: 95%;
+}
+
+.cienPorciento{
+    height: 100%;
+}
+
+/* fin cantidades */
+
+.nameStat{
+    height: 10%;
+    font-size: .8em;
+}
+
 
 .containerButton{
     height: 15%;
@@ -474,8 +611,9 @@ body{
     height: auto;
     width: 90%;
     vertical-align: middle;
-    margin-top: 10%;
+    margin-top: 9%;
     margin-left: 3%;
+    font-size: 1.5em;
 }
 
 
@@ -588,5 +726,14 @@ body{
 
     .containerDatosExtra{
         margin-top: 8%;
+    }
+
+    .textoExtra{
+        margin-top: 10%;
+        font-size: 1.3em;
+    }
+
+    .nameStat{
+        font-size: .7em;
     }
 }

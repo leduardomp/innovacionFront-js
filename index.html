@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
     <title>Pokedex</title>
 
     <link href="./css/index.css" rel="stylesheet">
@@ -29,7 +30,7 @@
                     <img id="imgPokemon" src="./img/tituloPokemon.png" alt="default" class="imgPokemon">
                 </div>
                 <div class="botonesImagen">
-                    <div class="btn encendido colorRojo"></div>
+                    <div class="btn encendido colorRojo pointerCursor"></div>
                     <div class="bocina">
                         <div class="linea correccionlinea"></div>
                         <div class="linea"></div>
@@ -43,7 +44,7 @@
                     <div class="containerBotones ">
                         <div class="btn palanca colorNegro"></div>
                         <div class="btnRectangular colorRojo"></div>
-                        <div class="btnRectangular colorVerduzco" onclick="abrirCampoBusqueda()"></div>
+                        <div class="btnRectangular colorVerduzco pointerCursor" onclick="abrirCampoBusqueda()"></div>
                     </div>
                     <div class="containerName ">
                         <div class="campoName"> 
@@ -52,12 +53,12 @@
                     </div>
                 </div>
                 <div class="botonesCruz">
-                    <div class="palancaSuperior "></div>
+                    <div class="palancaSuperior pointerCursor" onclick="nextPokemon()"></div>
                     <div class="medio">
-                        <div class="palancaIzq" onclick="afterPokemon()"></div>
-                        <div class="palancaDer" onclick="nextPokemon()"></div>
+                        <div class="palancaIzq pointerCursor" onclick="nextFotoPokemon()"></div>
+                        <div class="palancaDer pointerCursor" onclick="afterFotoPokemon()"></div>
                     </div>
-                    <div class="palancaInferior"></div>
+                    <div class="palancaInferior pointerCursor" onclick="afterPokemon()"></div>
                 </div>
             </div>
         </div>
@@ -71,7 +72,56 @@
                     <div class="containerTipo ">
                         TIPO: <span id="tipoPokemon"></span>
                     </div>
-                    <div class="containerEspecificaciones"> </div>
+                    <div class="containerEspecificaciones"> 
+                        <div class="stat "> 
+                            <div class="nivel">
+                                <div id="nivelHP" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>HP</span>
+                            </div>
+                        </div>
+                        <div class="stat "> 
+                            <div class="nivel ">
+                                <div id="nivelAttack" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>Attack</span>
+                            </div>
+                        </div>
+                        <div class="stat "> 
+                            <div class="nivel ">
+                                <div id="nivelDefense" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>Defense</span>
+                            </div>
+                        </div>
+                        <div class="stat "> 
+                            <div class="nivel ">
+                                <div id="nivelSuperAttack" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>S Attack</span>
+                            </div>
+                        </div>
+                        <div class="stat "> 
+                            <div class="nivel ">
+                                <div id="nivelSuperDefense" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>S Defense</span>
+                            </div>
+                        </div>
+                        <div class="stat "> 
+                            <div class="nivel ">
+                                <div id="nivelSpeed" class="cantidad "></div>
+                            </div>
+                            <div class="nameStat">
+                                <span>Speed</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="containerButton ">
@@ -93,12 +143,15 @@
                 </div>
             </div>
             <div class="containerButtonLargos ">
-                <div class="btnRectangular colorGrisObscuro"></div>
+                <div class="btnRectangular colorGrisObscuro">
+                </div>
                 <div class="btnRectangular colorGrisObscuro"></div>
             </div>
             <div class="containerButtonLargosB ">
                 <div class="botonesGrises allBordes ">
-                    <div class="botonGris borderIzq" ></div>
+                    <div class="botonGris borderIzq" >
+                        <span id="numPokemon" class="numPokemon"></span>
+                    </div>
                     <div class="botonGris borderDer" ></div>
                 </div>
                 <div class="botonCirculo">
