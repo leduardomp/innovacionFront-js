@@ -27,10 +27,10 @@
                     <div class="btn indicador colorRojo"></div>
                 </div>
                 <div class="containerImagen2">
-                    <img id="imgPokemon" src="./img/tituloPokemon.png" alt="default" class="imgPokemon">
+                    <img id="imgPokemon" src="./img/tituloPokemon.png" alt="default" class="imgPokemon oculto">
                 </div>
                 <div class="botonesImagen">
-                    <div class="btn encendido colorRojo pointerCursor"></div>
+                    <div class="btn encendido efectoAccion colorRojo pointerCursor action" onclick="turnOnOff()"></div>
                     <div class="bocina">
                         <div class="linea correccionlinea"></div>
                         <div class="linea"></div>
@@ -43,22 +43,22 @@
                 <div class="botonesColores">
                     <div class="containerBotones ">
                         <div class="btn palanca colorNegro"></div>
-                        <div class="btnRectangular colorRojo"></div>
-                        <div class="btnRectangular colorVerduzco pointerCursor" onclick="abrirCampoBusqueda()"></div>
+                        <div class="btnRectangular colorRojo pointerCursor action" onclick="abrirCampoBusqueda(2)"></div>
+                        <div class="btnRectangular colorVerduzco pointerCursor action" onclick="abrirCampoBusqueda(1)" id="btnBusqueda"></div>
                     </div>
                     <div class="containerName ">
                         <div class="campoName"> 
-                            <span id="namePokemon" class="namePokemon">  </span> 
+                            <span id="namePokemon" class="namePokemon oculto">  </span> 
                         </div>
                     </div>
                 </div>
                 <div class="botonesCruz">
-                    <div class="palancaSuperior pointerCursor" onclick="nextPokemon()"></div>
+                    <div class="palancaSuperior pointerCursor action" onclick="nextPokemon()"></div>
                     <div class="medio">
-                        <div class="palancaIzq pointerCursor" onclick="nextFotoPokemon()"></div>
-                        <div class="palancaDer pointerCursor" onclick="afterFotoPokemon()"></div>
+                        <div class="palancaIzq pointerCursor action" onclick="nextFotoPokemon()"></div>
+                        <div class="palancaDer pointerCursor action" onclick="afterFotoPokemon()"></div>
                     </div>
-                    <div class="palancaInferior pointerCursor" onclick="afterPokemon()"></div>
+                    <div class="palancaInferior pointerCursor action" onclick="afterPokemon()"></div>
                 </div>
             </div>
         </div>
@@ -68,60 +68,69 @@
                 <div class="forma "></div>
             </div>
             <div class="containerCaracteristicas">
-                <div class="pizzarra">
-                    <div class="containerTipo ">
-                        TIPO: <span id="tipoPokemon"></span>
+                <div class="pizzarra ">
+                    <div id="textoPizarra" class="textPizarra oculto">
+                        <div class="containerTipo ">
+                            TIPO: <span id="tipoPokemon"></span>
+                        </div>
+                        <div class="containerEspecificaciones "> 
+                            <div class="stat "> 
+                                <div class="nivel">
+                                    <div id="nivelHP" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>HP</span>
+                                </div>
+                            </div>
+                            <div class="stat "> 
+                                <div class="nivel ">
+                                    <div id="nivelAttack" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>Attack</span>
+                                </div>
+                            </div>
+                            <div class="stat "> 
+                                <div class="nivel ">
+                                    <div id="nivelDefense" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>Defense</span>
+                                </div>
+                            </div>
+                            <div class="stat "> 
+                                <div class="nivel ">
+                                    <div id="nivelSuperAttack" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>S Attack</span>
+                                </div>
+                            </div>
+                            <div class="stat "> 
+                                <div class="nivel ">
+                                    <div id="nivelSuperDefense" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>S Defense</span>
+                                </div>
+                            </div>
+                            <div class="stat "> 
+                                <div class="nivel ">
+                                    <div id="nivelSpeed" class="cantidad "></div>
+                                </div>
+                                <div class="nameStat">
+                                    <span>Speed</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="containerEspecificaciones"> 
-                        <div class="stat "> 
-                            <div class="nivel">
-                                <div id="nivelHP" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>HP</span>
-                            </div>
-                        </div>
-                        <div class="stat "> 
-                            <div class="nivel ">
-                                <div id="nivelAttack" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>Attack</span>
-                            </div>
-                        </div>
-                        <div class="stat "> 
-                            <div class="nivel ">
-                                <div id="nivelDefense" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>Defense</span>
-                            </div>
-                        </div>
-                        <div class="stat "> 
-                            <div class="nivel ">
-                                <div id="nivelSuperAttack" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>S Attack</span>
-                            </div>
-                        </div>
-                        <div class="stat "> 
-                            <div class="nivel ">
-                                <div id="nivelSuperDefense" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>S Defense</span>
-                            </div>
-                        </div>
-                        <div class="stat "> 
-                            <div class="nivel ">
-                                <div id="nivelSpeed" class="cantidad "></div>
-                            </div>
-                            <div class="nameStat">
-                                <span>Speed</span>
-                            </div>
+                    <div id="movimientos" class="listaMov oculto">
+                        <div class="containerTipo"> lista de movimientos </div>
+                        <div class="containerLista">
+                            <div id="listaMov"></div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="containerButton ">
@@ -155,16 +164,18 @@
                     <div class="botonGris borderDer" ></div>
                 </div>
                 <div class="botonCirculo">
-                    <div class="btn led colorLed"></div>
+                    <div class="btn led colorLed pointerCursor action" onclick="cambiarStadisticMov()"></div>
                 </div>
             </div>
 
             <div class="containerDatosExtra">
                 <div class="datoExtraCont">
-                    <div class="datoExtra"> <div class="textoExtra"> ALTURA: <span id="alturaPokemon"></span> </div> </div>
+                    <div class="datoExtra"> 
+                        <div id="alturaDiv" class="textoExtra oculto"> ALTURA: <span id="alturaPokemon"></span> </div> </div>
                 </div>
                 <div class="datoExtraCont">
-                    <div class="datoExtra"> <div class="textoExtra"> PESO: <span id="pesoPokemon"></span> </div> </div>
+                    <div class="datoExtra"> 
+                        <div id="pesoDiv" class="textoExtra oculto"> PESO: <span id="pesoPokemon"></span> </div> </div>
                 </div>
             </div>
         </div>
@@ -175,9 +186,23 @@
         <div class="modal-contenido textCenter">
             <h2 class="tit2">Nombre del pokemon</h2>
             <input id="inputNamePokemon" type="text" class="inputText" placeholder="Nombre del pokemon">
-            <br><br>
-            <button class="btnAction allBordes colorOk" onclick="buscarPokemon()">Buscar</button>
-            <button class="btnAction allBordes colorCancel" onclick="cancelarCampoBusqueda()">Cancelar</button>
+            <br>
+            <h3 id="mensajeError" class="mensajeError"></h3>
+            <br>
+            <button class="btnAction allBordes colorOk" onclick="buscarPokemon(1)">Buscar</button>
+            <button class="btnAction allBordes colorCancel" onclick="cancelarCampoBusqueda(1)">Cancelar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modalInputNumber">
+        <div class="modal-contenido textCenter">
+            <h2 class="tit2">Número del pokemon</h2>
+            <input id="inputNumberPokemon" type="number" class="inputText" placeholder="Número del pokemon">
+            <br>
+            <h3 id="mensajeNumError" class="mensajeError"></h3>
+            <br>
+            <button class="btnAction allBordes colorOk" onclick="buscarPokemon(2)">Buscar</button>
+            <button class="btnAction allBordes colorCancel" onclick="cancelarCampoBusqueda(2)">Cancelar</button>
         </div>
     </div>
 
