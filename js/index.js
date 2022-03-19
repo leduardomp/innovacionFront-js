@@ -83,7 +83,7 @@ const buscarPokemon = (origen) => {
             })
 
     } else {
-
+        mensajeError({textoVacio:true}, origen)
     }
 }
 
@@ -330,8 +330,13 @@ const mensajeError = (res, origen) => {
         mensajeError = document.getElementById("mensajeNumError")
     }
 
+
     if (res.status === 404) {
         mensajeError.innerHTML = "Pokemon no localizado"
+
+    }else if(res.textoVacio){
+        mensajeError.innerHTML = "Debes llenar la casilla"
+
     } else {
         mensajeError.innerHTML = "Ocurrio el error -" + res.status
     }
