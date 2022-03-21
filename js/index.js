@@ -105,8 +105,6 @@ const nextFotoPokemon = () => {
                 }
 
             })
-    } else {
-
     }
 }
 
@@ -128,8 +126,6 @@ const afterFotoPokemon = () => {
                 }
 
             })
-    } else {
-
     }
 }
 
